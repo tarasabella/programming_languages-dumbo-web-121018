@@ -1,6 +1,18 @@
+# def reformat_languages(languages)
+#   new_languages = {}
+#   languages.each do |type, hash|
+#     hash.each do |name, attributes|
+#       new_languages[name] ||= attributes
+#       new_languages[name][:style] ||= []
+#       new_languages[name][:style] << type
+#     end
+#   end
+#   new_languages
+# end
+
 def reformat_languages(languages)
   new_hash = {}
-  new_hash[:ruby] = {type: "interpreted",
+  languages.each do [:oo, ] = {type: "interpreted",
     style: "oo"}
   },
   new_hash[:javascript] = {type: "interpreted",
